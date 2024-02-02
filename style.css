@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@700&display=swap');
+
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body {
+font-family: Montserrat;
+}
+
+/* header starts here */
+.header {
+background-color: #FFBF5E;
+height: 80px;
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+z-index: 100;
+}
+
+.left-header {
+width: 1fr;
+margin-left: 10rem;
+}
+
+.left-header img {
+width: 180px;
+}
+
+.right-header {
+width: 1fr;
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-right: 10rem;
+}
+
+.header-button {
+color: white;
+background-color: transparent;
+border: none;
+padding: 22px 13px;
+font-size: 15px;
+cursor: pointer;
+}
+
+.header-button:hover {
+background-color: #FFB340;
+}
+/* header ends here */
+
+
+/* body starts here */
+.container1 {
+background-color: #F7F7F7;
+display: flex;
+height: 740px;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+}
+
+.container1-picture {
+margin: 7rem 9rem 2rem 2rem;
+}
+
+.container1-picture img {
+height: 590px;
+}
+
+.container1-info {
+display: flex;
+flex-direction: column;
+align-items: starts;
+justify-content: center;
+margin-left: 9rem;
+}
+
+.container1-info span {
+color: #AA81F3;
+}
+
+.container1-info h2 {
+font-size: 85px;
+line-height: 100px;
+}
+
+hr {
+border-radius: 15px;
+width: 150px;
+height: 30px;
+background-color: #AA81F3;
+border: none;
+margin: 50px 0px;
+}
+
+.container1-info p {
+color: #9F9F9F;
+font-size: 25px;
+margin-bottom: 50px;
+}
+
+.container1-info b {
+color: black;
+font-weight: 800;
+}
+
+.container2 {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+padding: 60px 0px;
+}
+
+.container2 b {
+font-size: 28px;
+line-height: 40px;
+font-weight: 900;
+}
+
+.container2 span {
+color: #AA81F3;
+}
+
+.container3 {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+padding-top: 15px;
+padding-bottom: 60px;
+}
+
+.container3 img {
+width: 75px;
+}
+
+.container4 {
+background-color: #F7F7F7;
+height: 600px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.container4-info {
+font-size: 28px;
+margin-bottom: 50px;
+}
+.container4 span {
+color: #AA81F3;
+}
+
+.course-section {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.left-div div {
+text-align: center;
+padding: 18px 100px;
+border: 3.5px solid #AA81F3;
+margin-bottom: 40px;
+font-size: 20px;
+border-radius: 5px;
+background-color: white;
+}
+
+.right-div {
+margin-left: 8rem;
+display: flex;
+flex-direction: row;
+}
+
+.picture, .course-picture {
+height: 310px;
+width: 310px;
+position: relative;
+}
+
+.picture img {
+height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 15px 0px 0px 15px;
+}
+
+.course-price {
+top: 15px;
+left: 15px;
+border: none;
+border-radius: 8px;
+padding: 12px 8px;
+background-color: #7093F7;
+color: white;
+position: absolute;
+font-size: 20px;
+}
+
+.course-info {
+width: 1fr;
+max-width: 550px;
+height: 310px;
+padding: 45px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+background-color: white;
+border-radius: 0px 15px 15px 0px;
+box-shadow: 1px 1px 10px lightgrey;
+}
+
+.course-info b {
+font-size: 20px;
+margin-bottom: 1rem;
+}
+
+.course-info p {
+font-family: Arial;
+line-height: 30px;
+font-size: 14px;
+}
+
+.course-bottom-info {
+display: flex;
+margin: 1rem 0px;
+}
+.course-bottom-info h5 {
+margin-right: 3rem;
+}
+
+a {color:#AA81F3; font-size: 15px;}
+
+
+/* media query starts here */
+@media (min-width: 0px) and (max-width: 500px),
+(min-width: 501px) and (max-width: 749px),
+(min-width: 751px) and (max-width: 1000px) {
+    .left-header {
+    margin-left: 2rem;
+    }
+
+    .right-header {
+    margin-right: 2rem;
+    }
+
+    .container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    }
+
+    .container1-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0px 0px 0px;
+    }
+
+    .container1-info h2 {
+    font-size: 50px;
+    line-height: 50px;
+    }
+
+    .container1-picture {
+    margin: 2rem;
+    }
+
+    .container1-picture img {
+    height: 400px;
+    }
+
+    hr {
+    height: 20px;
+    }
+
+    .container1-info p {
+    font-size: 20px;
+    margin: 0px 2rem 2rem 2rem;
+    }
+
+    .container2 b {
+    font-size: 25px;
+    }
+
+    .container3 {
+    display: flex;
+    flex-direction: column;
+    }
+    .container3 img {
+    margin-bottom: 4rem;
+    }
+
+    .container4-info {
+    margin-top: 50px;
+    }
+
+    .container4 {
+    background-color: #F7F7F7;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .course-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 5rem;
+    width: 100%;
+    }
+
+    .right-div {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .picture img {
+    border-radius: 15px;
+    }
+
+    .course-info {
+    width: 100%;
+    height: 100%;
+    padding: 45px;
+    margin: 2rem 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px lightgrey;
+    text-align: center;
+    }
+    .course-bottom-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    .course-bottom-info h5 {
+    margin: 0px 0px 10px 0px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 749px) {
+    .container1-info h2 {
+    font-size: 60px;
+    line-height: 70px;
+    margin: 0px 20px;
+    }
+
+    .container1-picture {
+    margin: 2rem;
+    }
+
+    .container1-picture img {
+    height: 480px;
+    }
+
+    .course-info {
+    width: 1fr;
+    max-width: 480px;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 1000px) {
+    .container1-info h2 {
+    font-size: 60px;
+    line-height: 70px;
+    margin: 3rem 8rem 0px 8rem;
+    }
+
+    .container1-picture {
+    margin: 2rem;
+    }
+
+    .container1-picture img {
+    height: 600px;
+    }
+
+    .course-info {
+    width: 900px;
+    }
+
+    .course-bottom-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .course-bottom-info h5 {
+    margin: 0px 20px 0px 0px;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1300px) {
+    .left-header {
+    margin-left: 100px;
+    }
+
+    .right-header {
+    margin-right: 80px;
+    }
+
+    .container1 {
+    height: 100%;
+    }
+
+    .container1-picture {
+    height: 500px;
+    }
+
+    .container1-picture img {
+    height: 100%;
+    }
+
+    .container1-info {
+    padding-left: 0px;
+    }
+
+    .container1-info h2 {
+    font-size: 70px;
+    line-height: 80px;
+    }
+
+    hr {
+    height: 20px;
+    margin: 40px 0px;
+    }
+
+    .container1-info p {
+    font-size: 20px;
+    margin-right: 2rem;
+    }
+
+    .container3 img {
+    width: 60px;
+    }
+
+    .container4-info {
+    font-size: 28px;
+    margin-bottom: 50px;
+    }
+    .container4 span {
+    color: #AA81F3;
+    }
+
+    .course-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+
+    .left-div div {
+    padding: 15px 60px;
+    font-size: 18px;
+    }
+
+    .picture, .course-picture {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 55px;
+    right: 20px;
+    }
+
+    .picture img {
+    border-radius: 15px;
+    }
+
+    .course-price {
+    padding: 8px 6px;
+    font-size: 15px;
+    }
+
+    .right-div {
+    position: relative;
+    }
+
+    .course-info {
+    border-radius: 15px;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1100px) {
+    .container1-info h2 {
+    font-size: 50px;
+    line-height: 60px;
+    }
+}
